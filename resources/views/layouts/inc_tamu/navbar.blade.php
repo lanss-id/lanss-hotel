@@ -15,6 +15,7 @@
                     <x-nav-item-tamu label="Fasilitas" :link="route('guest.fasilitas.index')"/>
                     <x-nav-item-tamu label="Kamar" :link="route('guest.kamar.index')"/>
                     <x-nav-item-tamu label="Reservasi" :link="route('guest.reservasi.create')"/> 
+                    <x-nav-item-tamu label="Log-in" :link="route('admin.login')"/> 
                 </ul>
             </div> 
         </nav>
