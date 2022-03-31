@@ -37,7 +37,7 @@ Route::group([
         Route::post('logout','LoginAdminController@logout')->name('admin.logout');
 
         // Route::get('/','DashboardController@index')->name('dashboard');
-        Route::resource('/', 'KamarController');
+        Route::get('/', 'KamarController@index')->name('dashboard');
         // Route::get('/chart','DashboardController@data_chart');
 
         Route::get('/akun', 'AdminController@akun')->name('admin.akun');
