@@ -9,12 +9,12 @@ use App\Helper\ImageUrl;
 
 class KamarController extends Controller
 {
-    function __construct()
-    {
-        $this->middleware('can:role,"admin"',[
-            'except'=>['index','show']
-        ]);
-    }
+    // function __construct()
+    // {
+    //     $this->middleware('can:role,"admin"',[
+    //         'except'=>['index','show']
+    //     ]);
+    // }
     /**
      * Display a listing of the resource.
      *
@@ -31,7 +31,7 @@ class KamarController extends Controller
            })
             ->paginate(25);
 
-        return view('kamar.index',['data'=>$data]);
+        return view('kamar.create',['data'=>$data]);
     }
 
     /**
