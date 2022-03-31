@@ -16,10 +16,10 @@ class DatabaseSeeder extends Seeder
         // \App\Models\User::factory(10)->create();
         $this->call([
             AdminSeeder::class,
-            KamarSeeder::class,
-            FasilitasKamarSeeder::class,
-            FasilitasHotelSeeder::class,
-            PemesananSeeder::class,
+            // KamarSeeder::class,
+            // FasilitasKamarSeeder::class,
+            // FasilitasHotelSeeder::class,
+            // PemesananSeeder::class,
         ]);
     }
 }
