@@ -26,8 +26,6 @@ Route::get('reservasi/{pemesanan}', 'GuestReservasiController@show')->name('gues
 Route::get('reservasi/{pemesanan}/invoice', 'GuestReservasiController@invoice')->name('guest.reservasi.invoice');
 
 
-Route::resource('/tambah-kamar', 'KamarController');
-
 Route::group([
     'prefix'=>config('admin.path'),
 
