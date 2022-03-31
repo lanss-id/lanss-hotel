@@ -29,10 +29,17 @@ class AdminSeeder extends Seeder
         ]);
     
         Admin::create([
-            'nama'     => 'ssgit',
-            'username'    => 'ssgit05',
+            'nama'     => 'Maulana Kayyis',
+            'username'    => 'maulana',
+            'role'    => 'admin',
+            'password' => bcrypt('kayyis'),
+        ]);
+
+        Admin::create([
+            'nama'     => 'Purnadiva',
+            'username'    => 'diva',
             'role'    => 'resepsionis',
-            'password' => bcrypt('1234'),
+            'password' => bcrypt('diva123'),
         ]);
     }
 }
