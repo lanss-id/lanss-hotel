@@ -18,33 +18,23 @@
                 </div>
                 <div class="col-md-9">
                     <div class="boking_table">
-                        <form method="get" action="{{ route('guest.reservasi.create')}}" class="row bg-white py-4 px-2 form-pesan border shadow rounded">
-                            <div class="col-md">
-                                <div class="input-group">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text bg-white border-0">Check In</span>
-                                    </div>
-                                    <input type="date"  name="checkin"class="form-control rounded" placeholder="Check In">
+                        <form method="get" action="{{ route('guest.reservasi.create')}}" class="bg-white py-4 px-2 form-pesan border shadow rounded">
+                            <div class="row d-flex justify-content-around align-items-center">
+                                <div class="col-lg-3">
+                                    <label for="" class="ml-4">Tanggal Check In</label>
+                                    <input type="date"  name="checkin" class="form-control rounded" placeholder="Check In">
                                 </div>
-                            </div>
-                            <div class="col-md">
-                                <div class="input-group">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text bg-white border-0">Check Out</span>
-                                    </div>
+                                <div class="col-lg-3">
+                                    <label for="" class="ml-3">Tanggal Check Out</label>
                                     <input type="date" name="checkout" class="form-control rounded" placeholder="Check Out">
                                 </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="input-group d-flex align-content-center">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text bg-white border-0">Jumlah Kamar</span>
-                                    </div>
+                                <div class="col-lg-2">
+                                    <label for="">Jumlah Kamar</label>
                                     <input type="text" name="jumlah" class="form-control rounded" maxlength="3">
                                 </div>
-                            </div>
-                            <div class="col-md-2">
-                                <button type="submit" class="btn btn-block btn-sgit">Pesan</button>
+                                <div class="col-md-2">
+                                    <button type="submit" class="btn btn-block btn-sgit">Pesan</button>
+                                </div>
                             </div>
                         </form>
                     </div>
