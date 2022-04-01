@@ -76,7 +76,7 @@ class PemesananController extends Controller
         $pemesanan->update([
             'status'=>$request->status,
         ]);
-        return back()->with('status','update');
+        return redirect()->route('pemesanan.index')->with('status','store');
     }
     public function status($status)
     {
