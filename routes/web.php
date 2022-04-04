@@ -36,8 +36,9 @@ Route::group([
     Route::group(['middleware'=>'auth:admin'], function(){
         Route::post('logout','LoginAdminController@logout')->name('admin.logout');
 
-        Route::get('/','DashboardController@index')->name('dashboard');
-        Route::get('/chart','DashboardController@data_chart');
+        // Route::get('/','DashboardController@index')->name('dashboard');
+        // Route::get('/chart','DashboardController@data_chart');
+        Route::get('/', 'KamarController')->name('dashboard');
 
         Route::get('/akun', 'AdminController@akun')->name('admin.akun');
         Route::put('/akun', 'AdminController@updateAkun');
